@@ -20,7 +20,7 @@
                     <%= link_to(l(:vote_remove),
                                 {:controller => 'polls', :action => 'reset_vote', :poll_id => poll , :project_id => poll.project_id,
                                 :back_url => url_for(params)},
-                                :method => :post, :title => l(:vote_remove), :class => "icon icon-del") if is_voted and poll.revote %>
+                                :method => :post, :title => l(:vote_remove)) if is_voted and poll.revote %>
                     <%= radio_button_tag(:choice_id, choice.id, is_voted, :onclick => "this.form.submit()", :disabled => (vote and !poll.revote)) %>
                 </nobr>
             </td>
