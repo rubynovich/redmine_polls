@@ -7,6 +7,7 @@ if Rails::VERSION::MAJOR >= 3
     match 'projects/:project_id/polls/vote' => 'polls#vote'
     match 'projects/:project_id/polls/new_choice' => 'polls#new_choice'
     match 'projects/:project_id/polls/:poll_id/edit_choice/:id' => 'polls#edit_choice'
+    match 'projects/:project_id/polls/:poll_id/reset_vote' => 'polls#reset_vote'
     match 'projects/:project_id/polls/remove_choice/:id' => 'polls#remove_choice'
   end
 else
@@ -18,6 +19,7 @@ else
     map.connect 'projects/:project_id/polls/vote', :controller => 'polls', :action => 'vote'
     map.connect 'projects/:project_id/polls/new_choice', :controller => 'polls', :action => 'new_choice'
     map.connect 'projects/:project_id/polls/:poll_id/edit_choice/:id', :controller => 'polls', :action => 'edit_choice'
+    map.connect 'projects/:project_id/polls/:poll_id/reset_vote', :controller => 'polls', :action => 'reset_vote'
     map.connect 'projects/:project_id/polls/remove_choice/:id', :controller => 'polls', :action => 'remove_choice'
   end
 end
