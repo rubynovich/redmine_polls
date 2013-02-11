@@ -17,7 +17,7 @@ else
     map.connect 'projects/:project_id/polls/:id/delete', :controller => 'polls', :action => 'delete'
     map.connect 'projects/:project_id/polls/vote', :controller => 'polls', :action => 'vote'
     map.connect 'projects/:project_id/polls/new_choice', :controller => 'polls', :action => 'new_choice'
-    map.connect 'projects/:project_id/polls/:poll_id/edit_choice/:id', :controller => 'polls', :action => 'edit_choice'
+    map.connect 'projects/:project_id/polls/:poll_id/edit_choice/:id', :controller => 'polls', :action =>  => 'edit_choice'
     map.connect 'projects/:project_id/polls/remove_choice/:id', :controller => 'polls', :action => 'remove_choice'
   end
 end
