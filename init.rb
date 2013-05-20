@@ -3,7 +3,7 @@ require 'wiki_poll_macro'
 require 'last_polls_hooks'
 
 Redmine::Plugin.register :redmine_polls do
-  name 'Redmine Polls plugin'
+  name 'Polls'
   author 'Pavel Vinokurov'
   description 'Polls management. Insert polls and poll results as Wiki macros. Show non-voted polls on Home and on project Overview in a box similar to Latest News'
   version '0.0.1'
